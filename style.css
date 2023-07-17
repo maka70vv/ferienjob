@@ -1,5 +1,5 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.w3-bar,h1,a {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
 .main-container {
@@ -28,7 +28,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   text-align: center;
 }
 
-.main-container .overlay h1, p, button{
+.main-container .overlay h1, p, a{
   margin: 0;
   padding: 20px;
 }
@@ -129,5 +129,4 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .formBack{
     background: url("images/background.jpg") no-repeat;
         background-size: cover;
-    min-height: 100%;
 }

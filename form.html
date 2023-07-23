@@ -15,67 +15,69 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ferienjob</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Deutschkurs</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Kontakten</a>
+    <a href="ferienjob.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ferienjob</a>
+    <a href="deutschkurs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Deutschkurs</a>
+    <a href="kontakten.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Kontakten</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Ferienjob</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Deutschkurs</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Kontakten</a>
+    <a href="ferienjob.html" class="w3-bar-item w3-button w3-padding-large">Ferienjob</a>
+    <a href="deutschkurs.html" class="w3-bar-item w3-button w3-padding-large">Deutschkurs</a>
+    <a href="kontakten.html" class="w3-bar-item w3-button w3-padding-large">Kontakten</a>
   </div>
 </div>
 <div class="container" id="advanced-search-form">
     <h2>Form</h2>
-    <form>
+    <form style="margin-top: 10%">
         <div class="form-group">
-            <label for="first-name">First name</label>
             <input type="text" class="form-control" placeholder="First name" id="first-name">
         </div>
         <div class="form-group">
-            <label for="last-name">Last name</label>
             <input type="text" class="form-control" placeholder="Last name" id="last-name">
         </div>
         <div class="form-group">
-            <label for="city">City</label>
             <input type="text" class="form-control" placeholder="City" id="city">
         </div>
         <div class="form-group">
-            <label for="number">Phone number</label>
             <input type="text" class="form-control" placeholder="Phone number" id="number">
         </div>
         <div class="form-group">
-            <label for="age">Age</label>
             <input type="text" class="form-control" placeholder="Age" id="age">
         </div>
         <div class="form-group">
-            <label for="email">Email</label>
             <input type="email" class="form-control" placeholder="Email" id="email">
         </div>
-        <div class="form-group">
-            <label for="category">Category</label>
-            <input type="text" class="form-control" placeholder="Category" id="category">
-        </div>
-        <div class="form-group">
-            <label for="education">Education</label>
-            <input type="text" class="form-control" placeholder="Education" id="education">
-        </div>
-        <div class="form-group">
-            <label>Gender</label>
+
+                <div class="form-group">
+            <label>Category</label>
             <div class="radio">
                 <label class="radio-inline">
-                    <input type="radio" name="optradio">Male</label>
+                    <input type="radio" name="optradio">Kurs</label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio">Female</label>
+                    <input type="radio" name="optradio">Ferienjob</label>
             </div>
         </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Education" id="education">
+        </div>
         <div class="clearfix"></div>
-        <button type="submit" class="btn btn-info btn-lg btn-responsive" id="registrate"> <span class="glyphicon glyphicon-search"></span> Registrate</button>
+        <button type="submit" class="btn btn-info btn-lg btn-responsive w3-button w3-black w3-large w3-margin-top" id="registrate"> <span class="glyphicon glyphicon-search"></span> Registrate</button>
     </form>
 </div>
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 </body>
 
 </html>
